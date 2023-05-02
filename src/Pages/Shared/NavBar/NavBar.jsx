@@ -1,9 +1,8 @@
 import React from 'react';
 import { Button, Container, Nav, Navbar } from 'react-bootstrap';
-import logo from '../../../../public/logo/531-Chef-Logo-Template.jpg'
 const NavBar = () => {
     return (
-        <div>
+    
              <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container>
         <Navbar.Brand className='text-danger' href="#home">Super Chef BD</Navbar.Brand>
@@ -27,10 +26,8 @@ const NavBar = () => {
         </Navbar.Collapse>
       </Container>
     </Navbar>
-        <img className='ms-5' src={logo} alt="" />
-        
-        <img className='ms-5' src={logo} alt="" />
-        </div>
+       
+      
     );
 };
 
