@@ -1,0 +1,14 @@
+.AA{
+background-color: rgba(240, 248, 255, 0.29);
+
+}
+.BB{
+    background: #56CCF2;  
+
+    background: -webkit-linear-gradient(to right, #2F80ED, #56CCF2);   
+
+    background: linear-gradient(to right, #2F80ED, #56CCF2); 
+    
+ border: none;
+ padding: 15px;   
+}

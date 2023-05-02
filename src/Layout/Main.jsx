@@ -2,12 +2,13 @@ import React from 'react';
 import NavBar from '../Pages/Shared/NavBar/NavBar';
 import Footer from '../Pages/Shared/Footer/Footer';
 import Header from '../Pages/Home/Header/Header';
+import { Outlet } from 'react-router-dom';
 
 const Main = () => {
     return (
         <div>
             <NavBar></NavBar>
-            <Header></Header>
+            <Outlet></Outlet>
             <Footer></Footer>
         </div>
     );

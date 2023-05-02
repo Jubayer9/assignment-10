@@ -1,40 +1,25 @@
 import React from 'react';
-import { Card, Col, Row, } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 
-const ChefCard = ({chef}) => {
-    const {id,name,img,experience,likes,recipes}=chef 
+const ChefCard = ({ chef }) => {
+    const { id, name, img, experience, likes, recipes, details } = chef
     return (
-        <div>
-            
-            <Row xs={1} md={2} className="g-2">
-      
-        <Col>
-          <Card>
-            <Card.Img variant="top" src={img} />
-            <Card.Body>
-              <Card.Title>{name}</Card.Title>
-              <Card.Text>
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </Card.Text>
-             <div className='d-flex'>
-             <Card.Text>
-                {experience}
-              </Card.Text>
-               <Card.Text>
-                {experience}
-              </Card.Text> 
-              <Card.Text>
-                {experience}
-              </Card.Text>
-             </div>
-            </Card.Body>
-          </Card>
-        </Col>
-  
-    </Row>
-      
+        <div className="m-4 w-50 ">
+            <div className="col">
+                <div className="card BB">
+                    <img src={img} className="card-img-top" alt="..." />
+                    <div className="card-body">
+                        <h5 className="card-title">{name}</h5>
+                        <p className="card-text">{details}</p>
+                        <p className="card-text">{experience}</p>
+       <div className="d-flex justify-content-between">
+       <p className="card-text">{likes} </p>
+       <p className="card-text">{likes} </p>
+       </div>
+       <Button variant="danger">View Recipes</Button>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 };

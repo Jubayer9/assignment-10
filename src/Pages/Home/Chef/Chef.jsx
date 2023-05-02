@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import ChefCard from '../../ChefCard/ChefCard';
-
+import './Chef.css'
 
 const Chef = () => {
     const [chefs, setChef] = useState([]);
@@ -11,7 +11,7 @@ const Chef = () => {
             .catch(error => console.error(error))
     }, [])
     return (
-        <div className='d-flex'>
+        <div className='AA'>
             {
                 chefs.map(chef => <ChefCard
                     key={chef.id}

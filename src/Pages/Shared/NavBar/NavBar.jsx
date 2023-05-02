@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button, Container, Nav, Navbar } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 const NavBar = () => {
     return (
     
@@ -12,16 +13,16 @@ const NavBar = () => {
     
           </Nav>
           <Nav>
-            <Nav.Link href="#deets">More deets</Nav.Link>
-            <Nav.Link eventKey={2} href="#memes">
-              Dank memes
+            <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link eventKey={2} href="blog">
+              Blog
             </Nav.Link>
             <Nav.Link eventKey={2} href="#memes">
              Profile
             </Nav.Link>
-            <Nav.Link eventKey={2} href="#memes">
+            <Link to="/login">
             <Button variant="secondary">Login</Button>
-            </Nav.Link>
+            </Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
