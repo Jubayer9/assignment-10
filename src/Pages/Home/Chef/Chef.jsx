@@ -11,7 +11,7 @@ const Chef = () => {
             .catch(error => console.error(error))
     }, [])
     return (
-        <div className='AA'>
+        <div className='AA row row-cols-4 '>
             {
                 chefs.map(chef => <ChefCard
                     key={chef.id}

@@ -1,26 +1,55 @@
 import React from 'react';
-import { Button } from 'react-bootstrap';
-
+import { Button,} from 'react-bootstrap';
+import { FaRegEye } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 const ChefCard = ({ chef }) => {
-    const { id, name, img, experience, likes, recipes, details } = chef
+    const { name, img, experience, likes, recipes, details } = chef
     return (
-        <div className="m-4 w-50 ">
-            <div className="col">
-                <div className="card BB">
-                    <img src={img} className="card-img-top" alt="..." />
-                    <div className="card-body">
-                        <h5 className="card-title">{name}</h5>
-                        <p className="card-text">{details}</p>
-                        <p className="card-text">{experience}</p>
-       <div className="d-flex justify-content-between">
-       <p className="card-text">{likes} </p>
-       <p className="card-text">{likes} </p>
-       </div>
-       <Button variant="danger">View Recipes</Button>
-                    </div>
-                </div>
-            </div>
+        <>
+      <div className='BB m-5 '>
+        <img className='MM w-50 ' variant="top" src={img} />
+        <div>
+<h1 className='chef-name'>{name}</h1>
+<hr />
+          <div>
+            <p>
+           {details}
+
+            </p>
+          </div>
+          <div>
+            <h5>
+            {experience}
+            </h5>
+           
+          </div>
+          <p></p>
+          <div className='d-flex justify-content-sm-between'>
+          <div>
+            <h6>
+          recipes: {recipes}
+
+            </h6>
+          </div>
+
+          <div>
+            <p>
+          <FaRegEye />{likes}
+
+            </p>
+          </div>
+        
+          </div>
+<Link to='details'>
+<Button variant="danger">Danger</Button>
+
+</Link>
         </div>
+        <div>
+          
+        </div>
+      </div>
+    </>
     );
 };
 

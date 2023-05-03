@@ -3,6 +3,7 @@ background-color: rgba(240, 248, 255, 0.29);
 
 }
 .BB{
+    border-radius: 10px;
     background: #56CCF2;  
 
     background: -webkit-linear-gradient(to right, #2F80ED, #56CCF2);   
@@ -11,4 +12,15 @@ background-color: rgba(240, 248, 255, 0.29);
     
  border: none;
  padding: 15px;   
+}
+.MM{
+    margin-left: 25%;
+    border-radius: 10px;
+    border:5px solid #f2ea56 
+    ;
+}
+.chef-name{
+text-align: center;
+margin-top: 25px;
+border-top:2px solid rgb(119, 53, 242) ;
 }

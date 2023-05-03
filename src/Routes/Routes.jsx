@@ -1,30 +1,47 @@
-import { createBrowserRouter } from "react-router-dom";
-import Main from "../Layout/Main";
+import { Navigate, createBrowserRouter } from "react-router-dom";
+
 import Chef from "../Pages/Home/Chef/Chef";
+import Main from "../Layout/Main/Main";
+import LoginLayout from "../Layout/Main/LoginLayout";
 import Login from "../Pages/Login/Login";
-import Header from "../Pages/Home/Header/Header";
+import Register from "../Pages/Login/Register/Register";
+
 
 const router = createBrowserRouter([
+{
+    path:"/",
+    element:<LoginLayout></LoginLayout>,
+    children:[
+        {
+            path:'/',
+            element:<Navigate to="chef"></Navigate>
+        },
+        {
+            path:'/login',
+            element:<Login></Login>
+        },
+        {
+            path:'/register',
+            element:<Register></Register>
+        }
+    ]
+},
+
+
     {
-        path:'/',
+        path:'chef',
         element:<Main></Main>,
         children:[
-            {
-                path:'/',
-                element:<Header></Header>
-            },
-            
-    
-            {
-                path:'/login',
-                element:<Login></Login>
-            },
-            {
-                path:'/chef/:id',
+  
+
+  {
+                path:':id',
                 element:<Chef></Chef>,
-                loader:({params})=>fetch(`http://localhost:5000/chefs/${params.id}`)
+            
+              
             }
-        ]
-    }
-])
+            
+        ]  }
+    
+    ])
 export default router;
