@@ -24,7 +24,7 @@ const NavigationBar = () => {
 
           </Nav>
           <Nav>
-            <Nav.Link className='me-5 pe-5' href="chef">Home</Nav.Link>
+            <Nav.Link className='me-5 pe-5' href="/home">Home</Nav.Link>
             <Nav.Link className='me-5 pe-5' href="blog">Blog</Nav.Link>
          
 

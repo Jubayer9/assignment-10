@@ -8,9 +8,10 @@ const Main = () => {
     return (
         <div className='BG'>
             <NavigationBar></NavigationBar>
+            
             <Header></Header>
             <Chef></Chef>
-            <Outlet></Outlet>
+           
             
         </div>
     );
