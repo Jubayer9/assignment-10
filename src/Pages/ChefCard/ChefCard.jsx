@@ -3,7 +3,7 @@ import { Button,} from 'react-bootstrap';
 import { FaGrinHearts } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 const ChefCard = ({ chef }) => {
-    const { name, img, experience, likes, recipes, details } = chef
+    const { id,name, img, experience, likes, recipes, details } = chef
     return (
         <>
       <div className='BB m-5 '>
@@ -41,7 +41,7 @@ const ChefCard = ({ chef }) => {
           </div>
         
           </div>
-<Link to='/recipes'>
+<Link to={`/chef/${id}`}>
 <Button variant="danger">View Recipes</Button>
 
 </Link>
