@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button,} from 'react-bootstrap';
-import { FaRegEye } from 'react-icons/fa';
+import { FaGrinHearts } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 const ChefCard = ({ chef }) => {
     const { name, img, experience, likes, recipes, details } = chef
@@ -34,14 +34,15 @@ const ChefCard = ({ chef }) => {
 
           <div>
             <p>
-          <FaRegEye />{likes}
+          <FaGrinHearts className='fs-5'/>
+         _{likes}
 
             </p>
           </div>
         
           </div>
-<Link to='details'>
-<Button variant="danger">Danger</Button>
+<Link to='/recipes'>
+<Button variant="danger">View Recipes</Button>
 
 </Link>
         </div>

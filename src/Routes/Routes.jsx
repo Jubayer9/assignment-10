@@ -5,6 +5,7 @@ import Main from "../Layout/Main/Main";
 import LoginLayout from "../Layout/Main/LoginLayout";
 import Login from "../Pages/Login/Login";
 import Register from "../Pages/Login/Register/Register";
+import Recipes from "../Recipes/Recipes";
 
 
 const router = createBrowserRouter([
@@ -18,8 +19,11 @@ const router = createBrowserRouter([
         },
         {
             path:'/login',
-            element:<Login></Login>
+            element:<Login></Login>,
+    
         },
+        
+        
         {
             path:'/register',
             element:<Register></Register>
@@ -40,8 +44,13 @@ const router = createBrowserRouter([
             
               
             }
+        ]  },
+            {
+                path:'/recipes',
+                element:<Recipes></Recipes>,
+                loader:({params})=>fetch(`http://localhost:5000/chefs/${params.id}`)
+            }
             
-        ]  }
     
     ])
 export default router;
