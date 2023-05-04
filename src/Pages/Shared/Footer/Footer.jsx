@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer>
       <div className=" pt-4">
-        <section class=" Icon ">
+        <section className=" Icon ">
          <FaFacebook className='IC'/>
          <FaTwitter className='IC'/>
          <FaGoogle className='IC'/>

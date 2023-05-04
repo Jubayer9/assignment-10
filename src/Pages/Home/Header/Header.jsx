@@ -6,7 +6,7 @@ const Header = () => {
     return (
       <dir>
           <div className='d-flex header'>
-             <img src={logo} alt="" />
+             <img className='header-img'  src={logo} alt="" />
             <h1 className='title'>Top😘 <br /> Bangladeshi
             <br /> Chef 👨‍🍳</h1>
         

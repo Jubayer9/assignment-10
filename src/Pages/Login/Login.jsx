@@ -9,6 +9,7 @@ import app from '../../Fairebase/Fairebase.config';
 
 
 const Login = () => {
+  
   const auth = getAuth(app)
   const githubProvider = new GithubAuthProvider()
 

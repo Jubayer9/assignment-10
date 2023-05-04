@@ -1,4 +1,5 @@
 .title{
+    width: 50%;
     margin-top: 200px;
     color: rgb(255, 255, 255);
     font-size: 70px;
@@ -8,5 +9,15 @@
 .header{
     background: rgb(42,34,131);
 background: linear-gradient(90deg, rgba(42,34,131,0.7456232492997199) 0%, rgba(40,41,134,0.9276960784313726) 4%, rgba(39,46,136,0.9753151260504201) 7%, rgba(13,154,180,1) 66%, rgba(0,255,183,1) 100%);
+
+}
+.header-img{
+    width: 50%;
+}
+.displayName:hover{
+    color: #ffffff;
+ text-align: center;
+ margin-top: 4%;
+ background-color: rgba(0, 0, 0, 0.562);
 
 }
