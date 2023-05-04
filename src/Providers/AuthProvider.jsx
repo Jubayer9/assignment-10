@@ -12,21 +12,21 @@ const AuthProvider = ({ children }) => {
         
     }
     const signIn = (email,password)=>{
-        return signInWithEmailAndPassword(auth,email,password)
+        return signInWithEmailAndPassword(auth,email,password);
     }
     const logOut = ()=>{
         return signOut(auth);
     }
-
+    
     useEffect(()=>{
-       const unsubscribe= onAuthStateChanged(auth, loggedUser =>{
-        console.log(loggedUser);
-           setUser(loggedUser);
-
-
-       })
+        const unsubscribe= onAuthStateChanged(auth, loggedUser =>{
+            console.log(loggedUser);
+            setUser(loggedUser);
+            
+            
+        })
        return()=>{
-        return unsubscribe();
+        unsubscribe();
        }
 
     },[])

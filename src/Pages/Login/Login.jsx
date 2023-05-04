@@ -6,7 +6,10 @@ import { AuthContext } from '../../Providers/AuthProvider';
 
 const Login = () => {
   const {signIn}=useContext(AuthContext);
-  const navigator =useNavigate()
+  const navigator =useNavigate();
+
+
+  
   const handleLogin =event=>{
     event.preventDefault();
     const form = event.target;  
@@ -18,7 +21,7 @@ const Login = () => {
     .then(result=>{
       const loggedUser =result.user;
       console.log(loggedUser);
-      navigator('/')
+      navigator('/home')
      
      })
      .catch(error =>{

@@ -47,8 +47,8 @@ toast('jubayer hossain')
                         </Card.Text>
                     </Card.Body>
                     <Card.Footer className='recipe-footer'>
+                        <button  disabled={!divisible}  onClick={Toast}> <FcLike onClick={()=>setDivisible(!divisible)} className='like'></FcLike></button>
 
-                        <button  disabled={!divisible}  onClick={Toast}> <FcLike onClick={()=>setDivisible(!divisible)} ></FcLike></button>
                         <ToastContainer></ToastContainer>
                         
                     </Card.Footer>
@@ -67,7 +67,7 @@ toast('jubayer hossain')
                     </Card.Body>
                     <Card.Footer className='recipe-footer'>
 
-                        <button className='like' disabled={!divisible1} onClick={Toast}><FcLike onClick={()=>setDivisible1(!divisible1)} ></FcLike></button>
+                        <button  disabled={!divisible1} onClick={Toast}><FcLike onClick={()=>setDivisible1(!divisible1)} className='like'></FcLike></button>
                         <ToastContainer></ToastContainer>
                         
                     </Card.Footer>
@@ -86,7 +86,7 @@ toast('jubayer hossain')
                     </Card.Body>
                     <Card.Footer className='recipe-footer'>
 
-                        <button className='like' disabled={!divisible2} onClick={Toast}><FcLike onClick={()=>setDivisible2(!divisible2)} ></FcLike></button>
+                        <button  disabled={!divisible2} onClick={Toast}><FcLike onClick={()=>setDivisible2(!divisible2)} className='like'></FcLike></button>
                         <ToastContainer
                         
                         ></ToastContainer>

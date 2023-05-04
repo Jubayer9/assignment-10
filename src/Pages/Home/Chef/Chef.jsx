@@ -3,7 +3,7 @@ import ChefCard from '../../ChefCard/ChefCard';
 import './Chef.css'
 
 const Chef = () => {
-    const [chefs, setChef] = useState([]);
+    const [Chefs, setChef] = useState([]);
     useEffect(() => {
         fetch('http://localhost:5000/chefs')
             .then(res => res.json())
@@ -13,9 +13,9 @@ const Chef = () => {
     return (
         <div className='AA row row-cols-4 '>
             {
-                chefs.map(chef => <ChefCard
+                Chefs.map(chef => <ChefCard
                     key={chef.id}
-                    chef={chef}
+                    Chef={chef}
                 ></ChefCard> )
             }
         </div>

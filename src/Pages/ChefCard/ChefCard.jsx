@@ -2,8 +2,8 @@ import React from 'react';
 import { Button,} from 'react-bootstrap';
 import { FaGrinHearts } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-const ChefCard = ({ chef }) => {
-    const { id,name, img, experience, likes, recipes, details } = chef
+const ChefCard = ({ Chef }) => {
+    const { id,name, img, experience, likes, recipes, details } = Chef
     return (
         <>
       <div className='BB m-5 '>
