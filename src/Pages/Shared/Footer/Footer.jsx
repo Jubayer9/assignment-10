@@ -11,7 +11,7 @@ const Footer = () => {
     <FaInstagram className='IC'/>
          <FaGithub className='IC'/>
          
-<p>© 2023 Copyright:.com</p>
+<p className='mt-5 fs-3'>© 2023 Copyright : Super Chef BD.com</p>
           
         </section>
       </div>

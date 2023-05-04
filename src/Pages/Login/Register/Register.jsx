@@ -25,7 +25,7 @@ const Register = () => {
 
 
 
-        <Container className='w-50 mx-auto mt-5'>
+        <Container className='login-container w-50 mx-auto mt-5'>
             <h3>Please Login</h3>
             <Form onSubmit={handleRegister}>
                 <Form.Group className="mb-3  " >
@@ -52,7 +52,7 @@ const Register = () => {
                     <Form.Check type="checkbox" name='accept' label="Accept Terms and Condition" />
 
                 </Form.Group>
-                <Button variant="primary" type="submit">
+                <Button  variant="primary" type="submit">
                     Register
                 </Button> <br />
 

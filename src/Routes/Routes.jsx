@@ -18,7 +18,7 @@ const router = createBrowserRouter([
     children:[
         {
             path:'/',
-            element:<Navigate to="chef"></Navigate>
+            element:<Navigate to="/home"></Navigate>
         },
         {
             path:'/login',
@@ -34,14 +34,14 @@ const router = createBrowserRouter([
     ]
 },
 
+{
+    path:'chef',
+    element:<Main></Main>,
 
-    {
-        path:'chef',
-        element:<Main></Main>,
+        
 
-            
-  
 },
+
 {
                 path:'chef/:id',
                 element:<PrivateRoute><Recipes></Recipes></PrivateRoute>,

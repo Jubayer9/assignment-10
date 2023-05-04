@@ -4,7 +4,8 @@ import Footer from '../Pages/Shared/Footer/Footer';
 
 const QuestionAndAnswer = () => {
     return (
-        <div className='w-75 QQ'>
+        <div>
+            <div className=' QQ'>
             <div className='A-Q' >
                 <NavigationBar></NavigationBar>
                 <h1 className='Title'> (Answer to the question) </h1>
@@ -27,6 +28,7 @@ Since JavaScript doesn't have a built-in type checking solution, many developers
                 <h3 className='Q'>4. What is a custom hook, and why will you create a custom hook?</h3>
                 <h6> A :  it can be reused easily, which makes the code cleaner and reduces the time to write the code. It also enhances the rendering speed of the code as a custom hook does not need to be rendered again and again while rendering the whole code.</h6>
             </div>
+        </div>
             <Footer></Footer>
         </div>
     );

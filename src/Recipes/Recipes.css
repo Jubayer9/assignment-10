@@ -37,9 +37,47 @@ color: #ffffff;
 .like{
     font-size: 20px;
     
+    
+}
+.name{
+    margin-left: 45%;
+    border-radius: 20px;
+    color: #000000;
+    background-color: #c2dbf9;
+    width: 200px;
+    text-align: center;
 }
 .IC{
     height: 30px;
     width: 100px;
     margin-right: 40px;
+}
+.login-btn{
+    margin-bottom: 129px;
+    padding: 10px;
+    margin-left: 20px;
+    background: #56CCF2;
+
+    background: -webkit-linear-gradient(to right, #2F80ED, #56CCF2);
+
+    background: linear-gradient(to right, #6598d9, #56CCF2);
+  border-radius: 5px;
+  border: none;
+}
+.login-btn-container{
+    text-align: center;
+    margin-top: 20px;
+  
+}
+.login-container{
+    padding: 20px;
+    border-radius:15px ;
+    margin-top: 29px;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.955);
+}
+.love-btn{
+margin-left: 75%;
+border: none;
+border-radius: 1000%;
 }
