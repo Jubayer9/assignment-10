@@ -47,6 +47,15 @@ color: #ffffff;
     width: 200px;
     text-align: center;
 }
+.best-3{
+    border: 2px solid #ffffff;
+    height: 70px;
+    border-radius: 20px;
+    color: #00a2ff;
+
+
+    text-align: center;
+}
 .IC{
     height: 30px;
     width: 100px;

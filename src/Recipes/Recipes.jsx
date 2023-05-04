@@ -9,13 +9,15 @@ import NavigationBar from '../Pages/Shared/NavigationBar/NavigationBar';
 import 'react-toastify/dist/ReactToastify.css';
 import { useState } from 'react';
 import Footer from '../Pages/Shared/Footer/Footer';
+import Rating from 'react-rating';
+import { FaRegStar, FaStar } from 'react-icons/fa';
 
 const Recipes = () => {
     const Toast = () => {
-        toast('jubayer hossain')
+        toast('You Like This Recipes 😘😘😘')
     }
     const recipes = useLoaderData();
-    const { recipeImg, recipeImg1, recipeImg2, name, recipeDetails, recipeDetails2, recipeDetails3, recipeDetails4, recipeDetails5, Rating, img,recipeName,recipeName1,recipeName2, } = recipes;
+    const { recipeImg, recipeImg1, recipeImg2, name, recipeDetails, recipeDetails2, recipeDetails3, recipeDetails4, recipeDetails5, img, recipeName, recipeName1, recipeName2, } = recipes;
     const [divisible, setDivisible] = useState(true)
     const [divisible1, setDivisible1] = useState(true)
     const [divisible2, setDivisible2] = useState(true)
@@ -32,7 +34,7 @@ const Recipes = () => {
                 </Card.Body>
             </Card>
 
-
+            <h1 className='best-3'> This Chef best 3 recipes </h1>
             <CardGroup className='main-card'>
                 <Card className='recipe-card'>
                     <Card.Img className='recipe-img' variant="top" src={recipeImg} />
@@ -48,10 +50,16 @@ const Recipes = () => {
                         </Card.Text>
                     </Card.Body>
                     <Card.Footer className='recipe-footer'>
-                        <button className='love-btn'  disabled={!divisible} onClick={Toast}> <FcLike onClick={() => setDivisible(!divisible)} className='like'></FcLike></button>
+                        <button className='love-btn' disabled={!divisible} onClick={Toast}> <FcLike onClick={() => setDivisible(!divisible)} className='like'></FcLike></button>
 
                         <ToastContainer></ToastContainer>
-
+                        <Rating
+  placeholderRating={4.3}
+  readonly
+  emptySymbol={<FaRegStar/>}
+  placeholderSymbol={<FaStar className='text-warning'></FaStar>}
+  fullSymbol={<FaStar/>}
+/>
                     </Card.Footer>
                 </Card>
                 <Card className='recipe-card'>
@@ -68,8 +76,16 @@ const Recipes = () => {
                     </Card.Body>
                     <Card.Footer className='recipe-footer'>
 
-                        <button className='love-btn'  disabled={!divisible1} onClick={Toast}><FcLike onClick={() => setDivisible1(!divisible1)} className='like'></FcLike></button>
+                        <button className='love-btn' disabled={!divisible1} onClick={Toast}><FcLike onClick={() => setDivisible1(!divisible1)} className='like'></FcLike></button>
                         <ToastContainer></ToastContainer>
+
+                        <Rating
+  placeholderRating={4.3}
+  readonly
+  emptySymbol={<FaRegStar/>}
+  placeholderSymbol={<FaStar className='text-warning'></FaStar>}
+  fullSymbol={<FaStar/>}
+/>
 
                     </Card.Footer>
                 </Card>
@@ -88,9 +104,15 @@ const Recipes = () => {
                     <Card.Footer className='recipe-footer'>
 
                         <button className='love-btn' disabled={!divisible2} onClick={Toast}><FcLike onClick={() => setDivisible2(!divisible2)} className='like'></FcLike></button>
-                        <ToastContainer
+                        <ToastContainer></ToastContainer>
 
-                        ></ToastContainer>
+                        <Rating
+  placeholderRating={4.3}
+  readonly
+  emptySymbol={<FaRegStar/>}
+  placeholderSymbol={<FaStar className='text-warning'></FaStar>}
+  fullSymbol={<FaStar/>}
+/>
 
                     </Card.Footer>
                 </Card>

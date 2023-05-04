@@ -1,6 +1,6 @@
-import { Navigate, createBrowserRouter } from "react-router-dom";
+import { Navigate, Routes, createBrowserRouter } from "react-router-dom";
 
-import Chef from "../Pages/Home/Chef/Chef";
+
 import Main from "../Layout/Main/Main";
 import LoginLayout from "../Layout/Main/LoginLayout";
 import Login from "../Pages/Login/Login";
@@ -9,6 +9,7 @@ import Recipes from "../Recipes/Recipes";
 import Home from "../Home/Home";
 import PrivateRoute from "./PrivateRoute";
 import QuestionAndAnswer from "../QuestionAndAnswer/QuestionAndAnswer";
+import ErrorPage from "../Error/ErrorPage";
 
 
 const router = createBrowserRouter([
@@ -45,7 +46,7 @@ const router = createBrowserRouter([
 {
                 path:'chef/:id',
                 element:<PrivateRoute><Recipes></Recipes></PrivateRoute>,
-                loader:({params})=>fetch(`http://localhost:5000/chefs/${params.id}`)
+                loader:({params})=>fetch(`https://assignment-10-server-delta-henna.vercel.app/chefs/${params.id}`)
                 
 },
 {
@@ -55,6 +56,11 @@ const router = createBrowserRouter([
 {
     path:"/blog",
     element:<QuestionAndAnswer></QuestionAndAnswer>
+},
+
+{
+    path:'*',
+    element:<ErrorPage></ErrorPage>
 }
 
           

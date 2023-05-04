@@ -5,7 +5,7 @@ import './Chef.css'
 const Chef = () => {
     const [Chefs, setChef] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/chefs')
+        fetch('https://assignment-10-server-delta-henna.vercel.app/chefs')
             .then(res => res.json())
             .then(data => setChef(data))
             .catch(error => console.error(error))

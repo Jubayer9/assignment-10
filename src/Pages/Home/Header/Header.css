@@ -5,8 +5,10 @@
     font-size: 70px;
     margin-left: 30px;
     
+    
 }
 .header{
+    width: 99%;
     background: rgb(42,34,131);
 background: linear-gradient(90deg, rgba(42,34,131,0.7456232492997199) 0%, rgba(40,41,134,0.9276960784313726) 4%, rgba(39,46,136,0.9753151260504201) 7%, rgba(13,154,180,1) 66%, rgba(0,255,183,1) 100%);
 
@@ -18,6 +20,17 @@ background: linear-gradient(90deg, rgba(42,34,131,0.7456232492997199) 0%, rgba(4
     color: #ffffff;
  text-align: center;
  margin-top: 4%;
- background-color: rgba(0, 0, 0, 0.562);
+ 
 
+
+}
+.hobart{
+    color:#ffffff;
+    font-size: 24px;
+margin-right: 20px;
+}
+
+.active{
+    text-decoration: underline;
+    background-color: rgb(255, 255, 255);
 }
