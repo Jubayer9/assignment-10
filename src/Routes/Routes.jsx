@@ -8,6 +8,7 @@ import Register from "../Pages/Login/Register/Register";
 import Recipes from "../Recipes/Recipes";
 import Home from "../Home/Home";
 import PrivateRoute from "./PrivateRoute";
+import QuestionAndAnswer from "../QuestionAndAnswer/QuestionAndAnswer";
 
 
 const router = createBrowserRouter([
@@ -50,6 +51,10 @@ const router = createBrowserRouter([
 {
     path:"/home",
     element:<Home></Home>
+},
+{
+    path:"/blog",
+    element:<QuestionAndAnswer></QuestionAndAnswer>
 }
 
           
