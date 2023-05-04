@@ -1,27 +1,25 @@
 import React from 'react';
-
+import { FaFacebook,FaTwitter,FaGoogle,FaInstagram,FaGithub } from "react-icons/fa";
 const Footer = () => {
-    return (
-        <div>
-           {/* <footer>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6">
-        <p>&copy; 2023 My Website. All Rights Reserved.</p>
+  return (
+    <footer>
+      <div className=" pt-4">
+        <section class=" Icon ">
+         <FaFacebook className='IC'/>
+         <FaTwitter className='IC'/>
+         <FaGoogle className='IC'/>
+    <FaInstagram className='IC'/>
+         <FaGithub className='IC'/>
+         
+<p>© 2023 Copyright:.com</p>
+          
+        </section>
       </div>
-      <div class="col-md-6">
-        <ul class="list-inline">
-          <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
-          <li class="list-inline-item"><a href="#">Terms of Use</a></li>
-          <li class="list-inline-item"><a href="#">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</footer> */}
 
-        </div>
-    );
+      
+    </footer>
+
+  );
 };
 
 export default Footer;

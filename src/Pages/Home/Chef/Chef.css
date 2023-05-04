@@ -1,34 +1,64 @@
-.AA{
-background-color: rgba(240, 248, 255, 0.29);
+.AA {
+    background-color: rgba(240, 248, 255, 0.29);
 
 }
-.BB{
+
+.BB {
     border-radius: 10px;
-    background: #56CCF2;  
+    background: #56CCF2;
 
-    background: -webkit-linear-gradient(to right, #2F80ED, #56CCF2);   
+    background: -webkit-linear-gradient(to right, #2F80ED, #56CCF2);
 
-    background: linear-gradient(to right, #2F80ED, #56CCF2); 
-    
- border: none;
- padding: 15px;   
+    background: linear-gradient(to right, #2F80ED, #56CCF2);
+
+    border: none;
+    padding: 15px;
 }
-.MM{
+
+.MM {
     margin-left: 25%;
     border-radius: 10px;
-    border:5px solid #f2ea56 
-    ;
+    border: 5px solid #f2ea56;
 }
-.chef-name{
-text-align: center;
-margin-top: 25px;
-border-top:2px solid rgb(119, 53, 242) ;
+
+.chef-name {
+    text-align: center;
+    margin-top: 25px;
+    border-top: 2px solid rgb(119, 53, 242);
 }
-.spinner{
+
+.spinner {
     margin: 400px;
-    
+
 }
-.QQ{
+
+.QQ {
+    
+   
+    background-color: rgb(24, 23, 23);
+    padding: 20px 90px;
+}
+
+.A-Q {
     margin: 0 auto;
-    margin-top:7% ;
+    margin-bottom: 60px;
+    color: #ffffff;
+}
+
+.Title {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #118b85;
+}
+
+.Q {
+    color: #2f00ff;
+}
+.Icon{
+    color: #ffffff;
+    text-align: center;
+    background-color: black;
+    height: 200px;
+    padding-top: 2%;
+    
 }

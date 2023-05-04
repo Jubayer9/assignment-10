@@ -4,6 +4,7 @@ import Header from '../../Pages/Home/Header/Header';
 import Chef from '../../Pages/Home/Chef/Chef';
 import './Main.css'
 import Footer from '../../Pages/Shared/Footer/Footer';
+
 const Main = () => {
     return (
         <div className='BG'>
@@ -12,6 +13,7 @@ const Main = () => {
             <Header></Header>
             <Chef></Chef>
            <Footer></Footer>
+         
             
         </div>
     );
